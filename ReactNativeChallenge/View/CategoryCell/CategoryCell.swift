@@ -33,6 +33,7 @@ class CategoryCell: UITableViewCell {
     func setupCell(viewModel: CategoryCellViewModel) {
         titleSectionLbl.text = viewModel.title
 
+        setupCollectionView()
         collectionViewDataSource = viewModel.seriesList
     }
 
